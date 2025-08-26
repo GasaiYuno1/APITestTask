@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APITestTask</name>
+    </assembly>
+    <members>
+        <member name="M:APITestTask.Controllers.AdPlatformsController.UploadAdPlatforms(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload ad platforms data from a file
+            </summary>
+            <param name="file">Text file containing ad platform data in format: PlatformName:/location1,/location2</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:APITestTask.Controllers.AdPlatformsController.UploadAdPlatformsFromContent(System.String)">
+            <summary>
+            Upload ad platforms data from text content
+            </summary>
+            <param name="content">Text content with ad platform data in format: "PlatformName:/location1,/location2\nPlatformName2:/loc1,loc2"</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:APITestTask.Controllers.AdPlatformsController.SearchAdPlatforms(System.String)">
+            <summary>
+            Search for ad platforms available in a specific location
+            </summary>
+            <param name="location">Location path (e.g., /ru/svrd/revda)</param>
+            <returns>List of ad platforms available in the specified location</returns>
+        </member>
+    </members>
+</doc>
